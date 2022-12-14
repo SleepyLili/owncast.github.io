@@ -40,6 +40,5 @@ Some examples of this functionality might be things like:
 
 1. This action's UI should perform little to no navigation. It shouldn't be treated as a way to show just any page.
 1. Design your UI to live in a small window that doesn't require much, if any, scrolling, and is responsive to mobile and small displays.
-1. Make sure your URL's server allows loading your content from your Owncast server via [X-FRAME-OPTIONS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options) and the [CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy).
 1. The chat username of the person who fired this action is passed along as a URL parameter so you can pre-fill any forms for convenience. You should utilize this.
 1. The instance URL of the Owncast server that is displaying this action UI is passed along as a URL parameter so if you happen to be hosting actions for multiple servers you can know where it's coming from. **Note:** You shouldn't perform arbitrary API requests just because this parameter exists, since anybody can easily fake it.
